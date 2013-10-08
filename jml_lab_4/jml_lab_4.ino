@@ -112,7 +112,7 @@ ISR(USART_RX_vect){
    ISR_main_link_circ_bufer[circ_buf_head] = UDR0;
    circ_buf_head++;
    circ_buf_head &= 0b00011111;
-   //circ_buf_head &= 0b000111111;
+   //circ_buf_head &= 0b000111111; 
 }
 
 
